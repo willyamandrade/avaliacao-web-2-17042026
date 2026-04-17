@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h3><i>Eventos em Destaque:</i></h3>
+    <table border="1">
+        <thead>
+            <th>Evento</th>
+            <th>Local</th>
+        </thead>
+        {% for evento in eventos %}
+        <tr>
+            <td>{{ evento.nomedoevento }}</td>
+            <td>{{ evento.local }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
